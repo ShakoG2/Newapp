@@ -1,0 +1,26 @@
+Ext.define("AP.view.posts.SearchForm",{
+    extend:"Ext.form.Panel",
+    layout:"vbox",
+    border:false,
+    bodyPadding:10,
+    items:[{
+        xtype:"numberfield",
+        name:"userId",
+        fieldLabel:"User ID"
+    },{
+        xtype:"textfield",
+        name:"body",
+        fieldLabel:"Body"
+    },{
+        xtype:"textfield",
+        name:"title",
+        fieldLabel:"Title"
+    }],
+    buttons:[{
+        text:"Search",
+        handler:"search"
+    },{
+        text:"Reset",
+        handler:"reset"
+    }]
+})
